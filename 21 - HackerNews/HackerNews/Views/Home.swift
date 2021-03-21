@@ -9,12 +9,16 @@
 import SwiftUI
 
 struct Home: View {
+    @ObservedObject var networkManager = NetworkManager()
+    
     var body: some View {
         NavigationView {
-            List(postList) { post in
+            List(networkManager.posts) { post in
                 Text(post.title)
             }
             .navigationBarTitle("Hacker News")
+        }.onAppear {
+            self.networkManager.fetchData()
         }
     }
 }
@@ -24,9 +28,3 @@ struct ContentView_Previews: PreviewProvider {
         Home()
     }
 }
-
-let postList = [
-    Post(id: "0", title: "My not so big first title"),
-    Post(id: "1", title: "Short Second"),
-    Post(id: "2", title: "Third long title in this one that is very big"),
-]

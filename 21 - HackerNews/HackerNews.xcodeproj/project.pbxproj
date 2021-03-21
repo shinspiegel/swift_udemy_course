@@ -13,7 +13,8 @@
 		5426A79C26078A1600FAEDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5426A79B26078A1600FAEDAD /* Assets.xcassets */; };
 		5426A79F26078A1600FAEDAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5426A79E26078A1600FAEDAD /* Preview Assets.xcassets */; };
 		5426A7A226078A1600FAEDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5426A7A026078A1600FAEDAD /* LaunchScreen.storyboard */; };
-		543249BB2607BE590022AD34 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543249BA2607BE590022AD34 /* Post.swift */; };
+		54BB04662607C1C600365B64 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB04652607C1C600365B64 /* NetworkManager.swift */; };
+		54BB04692607C50200365B64 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB04682607C50200365B64 /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		5426A79E26078A1600FAEDAD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5426A7A126078A1600FAEDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5426A7A326078A1600FAEDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		543249BA2607BE590022AD34 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		54BB04652607C1C600365B64 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		54BB04682607C50200365B64 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,8 @@
 		543249B92607BE460022AD34 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				543249BA2607BE590022AD34 /* Post.swift */,
+				54BB04652607C1C600365B64 /* NetworkManager.swift */,
+				54BB04682607C50200365B64 /* PostData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,9 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5426A79626078A1500FAEDAD /* AppDelegate.swift in Sources */,
+				54BB04692607C50200365B64 /* PostData.swift in Sources */,
 				5426A79826078A1500FAEDAD /* SceneDelegate.swift in Sources */,
+				54BB04662607C1C600365B64 /* NetworkManager.swift in Sources */,
 				5426A79A26078A1500FAEDAD /* Home.swift in Sources */,
-				543249BB2607BE590022AD34 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
